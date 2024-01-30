@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.click:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 2rem;
+  max-width: 40rem;
+  margin: 0 2rem;
+  padding: 3rem;
+}
+
+.container-img {
+  position: relative;
+  cursor: pointer;
+}
+.container-img img {
+  border-radius: 2rem;
+}
+.container-img .overlay {
+  background-color: hsla(178, 100%, 50%, 0.2);
+  border-radius: 2rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.container-img .overlay .icon-view {
+  width: 5rem;
+}
+
+.container-img:hover .overlay {
+  display: flex;
+}
+
+.title {
+  margin-top: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+}
+
+.description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  max-width: 34rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.container-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+.data .container-price,
+.data .container-time {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.data .container-price .price {
+  color: hsl(178, 100%, 50%);
+}
+
+.line-through {
+  border: 1px solid hsl(215, 51%, 70%);
+  width: 100%;
+  margin: 3rem 0;
+  opacity: 0.2;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+}
+.profile .img-profile {
+  max-width: 4rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=app.css.map */
